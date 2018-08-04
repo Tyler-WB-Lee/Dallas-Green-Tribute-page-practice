@@ -1,0 +1,86 @@
+/* Universal Class Properties */
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .center-element {
+    margin: auto;
+    display: block;
+  }
+  
+  .center-text {
+    text-align: center
+  }
+  
+  .heading {
+     font-family: 'Permanent Marker', cursive;
+      color: crimson;
+  }
+  
+  /* Specificly targeted elements */
+  html {
+    font-family: arial, monospace;
+  }
+  
+  body {
+    background: linear-gradient(-45deg, #d3e1d4, #939083);
+  }
+  
+  h1 {
+    font-size: 60px;
+    text-shadow: 3px 3px #f9f1f1;
+    animation-name: text-pop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .2, .7, .6);
+  }
+  
+  @keyframes text-pop {
+    0% {
+      transform: scale(0);
+      transform: rotate(40deg);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  h2 {
+    font-size: 1.7em;
+    text-shadow: 1px 1px #f9f1f1;
+  }
+  
+  h3 {
+    text-shadow: 1px 1px #f9f1f1;
+  }
+  
+  ul {
+    max-width: 500px;
+  }
+  
+  ul li {
+    padding: 5px;
+  }
+  
+  /* Link Behaviour */
+  a {
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+  }
+  
+  a:hover {
+    color: crimson;
+  }
+  
+  a:visited {
+    color: seagreen;
+  }
+
+  a:hover:visited {
+    color: crimson;
+}
